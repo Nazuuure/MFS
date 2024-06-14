@@ -203,7 +203,6 @@ address {
     color: #2E363E;
     padding-top: 44px;
     padding-left: 50px;
-    margin: auto;
     width: 240px;
     height: 35px;
 }
@@ -313,6 +312,7 @@ address {
     .catalog {
         margin-top: 140px;
     }
+
     .txt {
         width: 60px;
         font-size: 9px;
@@ -324,4 +324,8 @@ address {
     .catalog {
         width: 380px;
     }
+}
+
+* {
+    outline: 1px solid red;
 }

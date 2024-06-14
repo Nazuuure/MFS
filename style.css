@@ -313,6 +313,10 @@ address {
     .catalog {
         margin-top: 120px;
     }
+    .txt {
+        width: 60px;
+        font-size: 9px;
+    }
 
 }
 

@@ -7,6 +7,7 @@ body {
     background-size: 1920px;
     background-repeat: no-repeat;
     height: 5000px;
+    margin: 0;
 }
 
 /* Первый блок сайта */
@@ -159,8 +160,7 @@ address {
 
 
 .containerSecond {
-    height: 1926px;
-    width: 1920px;
+    width: auto;
     margin-top: 525px;
 }
 
@@ -190,6 +190,11 @@ address {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.imgInCatalog {
+    width: 380px;
 }
 
 .nameInCatalog {
@@ -198,7 +203,7 @@ address {
     color: #2E363E;
     padding-top: 44px;
     padding-left: 50px;
-    margin: 0;
+    margin: auto;
     width: 240px;
     height: 35px;
 }
@@ -238,43 +243,51 @@ address {
     margin-top: 14px;
 }
 
+
+
 @media screen and (max-width: 1200px) {
 
     .address {
-    margin-left: 40%;
+        margin-left: 40%;
     }
 
     .worktime {
         margin-left: 60%;
         }
 
-    .logo {
+    .logo .btnAndTxt .container1{
         margin-left: 10%;
     }
 
-    .btnAndTxt {
-        margin-left: 10%;
+    .catalog {
+        width: 80%;
     }
 
-    .container1 {
-        margin-left: 10%;
+    .headingOfSecondContainer {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .containerSecond {
+        margin-top: 575px;
     }
 }
 
 @media screen and (max-width: 725px) {
+    
     #h1 {
         font-size: 38px;
     }
 
     .container1 {
-        width: 400px;
+        width: 360px;
         height: 500px;
         margin-top: 50px;
         height: auto;
     }
 
     .btn {
-        width: 250px;
+        width: 220px;
         height: 70px;
     }
 
@@ -282,24 +295,29 @@ address {
         font-size: 16px;
     }
 
-    .logo {
-        font-size: 30px;
-    }
-
     .address {
         position: absolute;
         font-size: 20px;
         width: 250px;
-        margin-left: 100px;
+        margin-left: 20%;
         margin-top: 700px;
     }
 
     .worktime {
         position: absolute;
         width: 280px;
-        margin-left: 100px;
+        margin-left: 20%;
         margin-top: 800px;
     }
 
+    .catalog {
+        margin-top: 120px;
+    }
 
+}
+
+@media screen and (max-width: 970px) {
+    .catalog {
+        width: 380px;
+    }
 }
